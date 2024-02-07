@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Dog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .giphy-embed {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showDogGif()">click here to adopt a golden retriever</button>
+    
+    <!-- Giphy iframe -->
+    <iframe src="https://giphy.com/embed/JRmilld9HS2CjW0miL" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    
+    <script>
+        function showDogGif() {
+            // Get the iframe by its class
+            var gifIframe = document.querySelector('.giphy-embed');
+            gifIframe.style.display = 'block'; // Change the display to 'block' to show the iframe
+        }
+    </script>
+</body>
+</html>
